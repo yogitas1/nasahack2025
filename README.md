@@ -156,6 +156,32 @@ Nigeria, Kenya, Ghana, Ethiopia, South Africa, Tanzania, Uganda, Rwanda, Senegal
 - Non-200 status codes and JSON parsing errors are logged and gracefully handled
 - Chat functionality works perfectly even if external APIs are down
 
+## Deployment to Streamlit Cloud
+
+1. Push your code to GitHub (make sure `.env` is in `.gitignore`)
+
+2. Go to [share.streamlit.io](https://share.streamlit.io) and sign in
+
+3. Click "New app" and select your repository
+
+4. Configure the app:
+   - **Main file path**: `app.py`
+   - **Python version**: 3.9 or higher
+
+5. Add secrets in Streamlit Cloud dashboard:
+   - Go to app settings → Secrets
+   - Add your OpenAI API key:
+   ```toml
+   OPENAI_API_KEY = "your_openai_api_key_here"
+   ```
+
+6. Deploy!
+
+**Important Notes:**
+- The `data/` folder with `embeddings.pkl` must be committed to your repository
+- Never commit your `.env` file - use Streamlit secrets instead
+- The app will automatically install dependencies from `requirements.txt`
+
 ## Contributing
 
 To add new articles to the knowledge base:
