@@ -45,10 +45,50 @@ class ExtractedKnowledge:
     challenges: List[str]
 
 class PDFKnowledgeExtractor:
-    def __init__(self, openai_api_key: str):
+    def __init__(self, openai_api_key: str, knowledge_base_file: str = "knowledge_base.json", embeddings_file: str = "embeddings.pkl"):
         self.client = OpenAI(api_key=openai_api_key)
         self.knowledge_base: List[ExtractedKnowledge] = []
         self.embeddings_data: List[Dict[str, Any]] = []
+        self.knowledge_base_file = knowledge_base_file
+        self.embeddings_file = embeddings_file
+        self.processed_files = set()
+        self._load_existing_knowledge()
+        self._load_existing_embeddings()
+
+    def _load_existing_knowledge(self) -> None:
+        """Load existing knowledge base if it exists."""
+        if os.path.exists(self.knowledge_base_file):
+            try:
+                with open(self.knowledge_base_file, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+
+                for item in data:
+                    # Track which files have already been processed
+                    self.processed_files.add(item['filename'])
+
+                    # Reconstruct ExtractedKnowledge objects
+                    knowledge = ExtractedKnowledge(
+                        filename=item['filename'],
+                        key_recommendations=[KeyRecommendation(**rec) for rec in item['key_recommendations']],
+                        case_studies=[CaseStudy(**case) for case in item['case_studies']],
+                        best_practices=item['best_practices'],
+                        challenges=item['challenges']
+                    )
+                    self.knowledge_base.append(knowledge)
+
+                logger.info(f"Loaded {len(self.knowledge_base)} existing documents from {self.knowledge_base_file}")
+            except Exception as e:
+                logger.error(f"Error loading existing knowledge base: {e}")
+
+    def _load_existing_embeddings(self) -> None:
+        """Load existing embeddings if they exist."""
+        if os.path.exists(self.embeddings_file):
+            try:
+                with open(self.embeddings_file, 'rb') as f:
+                    self.embeddings_data = pickle.load(f)
+                logger.info(f"Loaded {len(self.embeddings_data)} existing embeddings from {self.embeddings_file}")
+            except Exception as e:
+                logger.error(f"Error loading existing embeddings: {e}")
 
     def extract_text_from_pdf(self, pdf_path: str) -> str:
         """Extract text content from a PDF file."""
@@ -189,13 +229,22 @@ class PDFKnowledgeExtractor:
 
     def process_pdf_files(self, articles_dir: str = "articles") -> None:
         """Process all PDF files in the articles directory."""
-        pdf_files = list(Path(articles_dir).glob("*.pdf"))[:10]  # Limit to 10 files
+        pdf_files = list(Path(articles_dir).glob("*.pdf"))
 
-        logger.info(f"Processing {len(pdf_files)} PDF files...")
+        # Filter out already-processed files
+        new_pdf_files = [f for f in pdf_files if f.name not in self.processed_files]
+
+        logger.info(f"Found {len(pdf_files)} total PDF files")
+        logger.info(f"Already processed: {len(self.processed_files)} files")
+        logger.info(f"Processing {len(new_pdf_files)} new PDF files...")
+
+        if not new_pdf_files:
+            logger.info("No new files to process!")
+            return
 
         all_embedding_items = []
 
-        for pdf_file in pdf_files:
+        for pdf_file in new_pdf_files:
             logger.info(f"Processing {pdf_file.name}...")
 
             # Extract text
@@ -222,7 +271,8 @@ class PDFKnowledgeExtractor:
             for item, embedding in zip(all_embedding_items, embeddings):
                 item["embedding"] = embedding
 
-            self.embeddings_data = all_embedding_items
+            # Append new embeddings to existing ones
+            self.embeddings_data.extend(all_embedding_items)
 
     def save_knowledge_base(self, output_file: str = "knowledge_base.json") -> None:
         """Save the extracted knowledge base to a JSON file."""
