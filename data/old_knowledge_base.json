@@ -1,0 +1,397 @@
+[
+  {
+    "filename": "1-s2.0-S1755436522000433-main.pdf",
+    "key_recommendations": [
+      {
+        "infrastructure_type": "health information systems",
+        "target_setting": "low and middle income countries",
+        "expected_impact": "Improved disease surveillance and response capabilities",
+        "implementation_steps": [
+          "Develop integrated registries for births and deaths",
+          "Utilize geospatial modeling methods for small area demographic data",
+          "Incorporate satellite imagery and digital data for real-time updates",
+          "Train local health officials on data collection and analysis",
+          "Establish routine data collection systems to maintain updated population data"
+        ]
+      },
+      {
+        "infrastructure_type": "geospatial data systems",
+        "target_setting": "urban and rural areas in developing countries",
+        "expected_impact": "Enhanced accuracy in tracking disease outbreaks and health interventions",
+        "implementation_steps": [
+          "Invest in satellite imagery and GPS mapping technologies",
+          "Create partnerships with tech companies for data integration",
+          "Conduct pilot studies to validate geospatial data accuracy",
+          "Develop user-friendly software for health information systems",
+          "Ensure community engagement in data collection processes"
+        ]
+      }
+    ],
+    "case_studies": [
+      {
+        "country": "Namibia",
+        "project": "Improved quantification of denominator populations",
+        "outcome": "Changed malaria incidence measures by more than 30%",
+        "lessons": "Accurate denominator data is crucial for effective public health interventions"
+      },
+      {
+        "country": "Nordic countries",
+        "project": "Integrated registries and administrative data collection systems",
+        "outcome": "Timely small area data on population distributions without costly censuses",
+        "lessons": "Integrated systems can significantly enhance data accuracy and reduce costs"
+      }
+    ],
+    "best_practices": [
+      "Utilize modelled geospatial datasets for demographic data",
+      "Implement routine health data collection systems",
+      "Engage local communities in data collection to improve accuracy",
+      "Leverage technology for real-time data updates",
+      "Ensure cross-sector collaboration for comprehensive health data systems"
+    ],
+    "challenges": [
+      "Outdated or inaccurate census data",
+      "Lack of administrative and registry systems",
+      "Disruption of data collection due to pandemics",
+      "High population mobility leading to fluctuating data",
+      "Resistance to adopting new data collection technologies"
+    ]
+  },
+  {
+    "filename": "1-s2.0-S1877584525000358-main.pdf",
+    "key_recommendations": [
+      {
+        "infrastructure_type": "healthcare",
+        "target_setting": "rural areas and urban slums",
+        "expected_impact": "Improved vaccination coverage and reduced geographic inequities in health services",
+        "implementation_steps": [
+          "Conduct geolocated household surveys to gather data on vaccination coverage",
+          "Utilize geostatistical and machine learning methods to produce high-resolution maps",
+          "Identify underserved populations using the generated maps",
+          "Develop targeted intervention strategies based on the identified needs",
+          "Monitor and evaluate the effectiveness of interventions"
+        ]
+      }
+    ],
+    "case_studies": [
+      {
+        "country": "Nigeria",
+        "project": "Vaccination Coverage Mapping using Demographic and Health Survey",
+        "outcome": "Generated 1x1 km and district level maps of vaccination coverage indicators",
+        "lessons": "Geostatistical methods provided the best predictive performance, highlighting the importance of method selection in spatial prioritization"
+      }
+    ],
+    "best_practices": [
+      "Integrate high-resolution population maps with health facility data for precise targeting",
+      "Use a combination of geostatistical and machine learning approaches for robust mapping",
+      "Regularly update maps to reflect changes in population and health indicators",
+      "Engage local stakeholders in the planning and implementation of health interventions"
+    ],
+    "challenges": [
+      "High operational costs of conducting geolocated household surveys",
+      "Incomplete and unreliable health management information systems in low- and middle-income countries",
+      "Potential for missing underserved populations due to methodological differences in mapping approaches"
+    ]
+  },
+  {
+    "filename": "Appropriately-smoothing-prevalence-data-to-inform-estimates-of-gr_2022_Epide.pdf",
+    "key_recommendations": [
+      {
+        "infrastructure_type": "healthcare",
+        "target_setting": "urban areas",
+        "expected_impact": "Improved tracking and management of COVID-19 spread",
+        "implementation_steps": [
+          "Develop a Bayesian P-spline model for epidemic data analysis",
+          "Collect point-prevalence data through random sampling",
+          "Implement non-pharmaceutical interventions (NPIs) based on data insights",
+          "Regularly update and refine data collection methods to ensure representativeness"
+        ]
+      }
+    ],
+    "case_studies": [
+      {
+        "country": "United Kingdom",
+        "project": "REal-time Assessment of Community Transmission-1 (REACT-1)",
+        "outcome": "Accurate measurement of community prevalence of SARS-CoV-2",
+        "lessons": "Random sampling reduces bias and provides reliable data for epidemic tracking"
+      }
+    ],
+    "best_practices": [
+      "Utilize robust statistical models for epidemic data analysis",
+      "Ensure data collection methods are unbiased and representative",
+      "Adapt NPIs based on real-time data to balance public health and economic impacts",
+      "Regularly review and adjust methodologies to account for changing behaviors and conditions"
+    ],
+    "challenges": [
+      "Bias in data collection leading to unrepresentative sample populations",
+      "Difficulty in tracking rapid changes in reproduction number due to varying data quality",
+      "Balancing public health measures with economic and mental health impacts"
+    ]
+  },
+  {
+    "filename": "e088606.full.pdf",
+    "key_recommendations": [
+      {
+        "infrastructure_type": "healthcare",
+        "target_setting": "urban slums",
+        "expected_impact": "Improved access to emergency obstetric care and reduced maternal mortality rates.",
+        "implementation_steps": [
+          "Strengthen the quality and capacity of local health centers in urban slums.",
+          "Implement training programs for healthcare providers to enhance skills in emergency obstetric care.",
+          "Increase awareness and education about available services among women in slums.",
+          "Establish referral systems to ensure timely access to higher-level care when necessary."
+        ]
+      }
+    ],
+    "case_studies": [
+      {
+        "country": "Senegal",
+        "project": "C-section fees exemption policy",
+        "outcome": "Increased access to caesarean sections in pilot regions, with a notable increase in the c-section rate in Dakar.",
+        "lessons": "Policy implementation must consider the unique challenges faced by women in urban slums to ensure equitable access."
+      }
+    ],
+    "best_practices": [
+      "Conduct regular assessments of healthcare facility quality to ensure standards are met.",
+      "Engage community leaders to promote the importance of utilizing local health facilities.",
+      "Utilize primary data collection methods to understand the specific needs and barriers faced by women in urban slums."
+    ],
+    "challenges": [
+      "High rates of bypassing local health facilities due to perceived lower quality of care.",
+      "Limited awareness of available services among women in slums.",
+      "Insufficient training and resources for local healthcare providers."
+    ]
+  },
+  {
+    "filename": "Filtering-and-improved-Uncertainty-Quantification-in-the-dynamic-_2022_Epide.pdf",
+    "key_recommendations": [
+      {
+        "infrastructure_type": "healthcare",
+        "target_setting": "urban areas",
+        "expected_impact": "Improved monitoring and response to infectious disease outbreaks",
+        "implementation_steps": [
+          "Develop a robust data collection system for incidence reporting",
+          "Implement Bayesian estimation methods for effective reproduction number",
+          "Train healthcare professionals on the use of new estimation tools",
+          "Establish protocols for timely data sharing and analysis"
+        ]
+      }
+    ],
+    "case_studies": [
+      {
+        "country": "Mexico",
+        "project": "COVID-19 epidemic monitoring",
+        "outcome": "Enhanced understanding of transmission dynamics and improved public health responses",
+        "lessons": "Accurate incidence data is crucial for reliable estimation of effective reproduction numbers"
+      }
+    ],
+    "best_practices": [
+      "Utilize autoregressive latent processes for better uncertainty quantification",
+      "Incorporate symptom onset dates for more accurate incidence data",
+      "Regularly update models to reflect changing epidemic conditions",
+      "Engage non-experts in the use of simplified analytic methods"
+    ],
+    "challenges": [
+      "Inherent stochastic variability in reported cases",
+      "Delays in reporting and data collection",
+      "Need for accurate proxies for incidence data",
+      "Complexity of Bayesian methods for non-experts"
+    ]
+  },
+  {
+    "filename": "journal.pgph.0005072.pdf",
+    "key_recommendations": [
+      {
+        "infrastructure_type": "healthcare",
+        "target_setting": "Kasaï-Oriental, Democratic Republic of the Congo",
+        "expected_impact": "Improved allocation of vaccines and health resources based on accurate population estimates.",
+        "implementation_steps": [
+          "Develop a Bayesian model for population estimation.",
+          "Collect geolocated survey data and geospatial datasets.",
+          "Aggregate population estimates across health zones.",
+          "Utilize estimates for planning vaccination campaigns."
+        ]
+      }
+    ],
+    "case_studies": [
+      {
+        "country": "Democratic Republic of the Congo",
+        "project": "Bayesian high-resolution population estimation in Kasaï-Oriental",
+        "outcome": "Estimated population of approximately 4.1 million with a credible range of 3.4 to 4.8 million.",
+        "lessons": "High-resolution population estimates can significantly enhance public health planning and resource allocation."
+      }
+    ],
+    "best_practices": [
+      "Integrate geolocated household surveys with geospatial datasets.",
+      "Use Bayesian statistical models to account for uncertainty in population estimates.",
+      "Regularly update demographic data to reflect current population dynamics."
+    ],
+    "challenges": [
+      "Lack of reliable national and sub-national demographic data.",
+      "Inaccessibility of vulnerable populations due to logistical constraints.",
+      "Biases in automatic detection of settlement and building features."
+    ]
+  },
+  {
+    "filename": "s11524-023-00812-0.pdf",
+    "key_recommendations": [
+      {
+        "infrastructure_type": "healthcare",
+        "target_setting": "urban slums",
+        "expected_impact": "Improved access to antenatal care (ANC) and immunization services",
+        "implementation_steps": [
+          "Conduct assessments to identify specific health service gaps in urban slums",
+          "Develop targeted health policies and programs focusing on urban slum populations",
+          "Increase funding and resources for healthcare facilities in slum areas",
+          "Implement community outreach programs to raise awareness about available health services",
+          "Train healthcare workers to provide culturally sensitive care to urban slum residents"
+        ]
+      }
+    ],
+    "case_studies": [
+      {
+        "country": "Ghana",
+        "project": "Assessment of MNCH service utilization in Greater Accra region",
+        "outcome": "Identified significant disparities in MNCH service utilization between slum and non-slum districts",
+        "lessons": "Need for targeted interventions to improve health service access in urban slums"
+      }
+    ],
+    "best_practices": [
+      "Engage local communities in the planning and implementation of health services",
+      "Utilize data from Health Management Information Systems (HMIS) to inform policy decisions",
+      "Ensure that health services are affordable and accessible to low-income populations",
+      "Promote partnerships between government, NGOs, and community organizations to enhance service delivery"
+    ],
+    "challenges": [
+      "Limited access to healthcare facilities in urban slums",
+      "Inadequate funding for health services targeting urban poor",
+      "Lack of health insurance among slum residents",
+      "Poor infrastructure and sanitation in urban slum areas",
+      "Insufficient data on health service utilization in urban slums"
+    ]
+  },
+  {
+    "filename": "s12963-025-00374-0 (1).pdf",
+    "key_recommendations": [
+      {
+        "infrastructure_type": "healthcare",
+        "target_setting": "sub-Saharan Africa",
+        "expected_impact": "Improved monitoring of child health indicators and targeted resource allocation",
+        "implementation_steps": [
+          "Leverage routinely collected health data (RCHD) for population health improvement",
+          "Develop geostatistical models to estimate health facility catchment areas",
+          "Integrate health facility data with demographic data to create accurate population denominators",
+          "Establish a standardized approach for data collection and reporting across health facilities"
+        ]
+      }
+    ],
+    "case_studies": [
+      {
+        "country": "sub-Saharan Africa",
+        "project": "District Health Information Software (DHIS2)",
+        "outcome": "Improved data collection and reporting infrastructure across 70 LMICs",
+        "lessons": "Harmonizing data collection can enhance the quality and utility of health data for decision-making"
+      }
+    ],
+    "best_practices": [
+      "Utilize complex geostatistical or travel time-based modeling approaches for estimating catchment areas",
+      "Incorporate multiple data sources to capture spatial, supply-side, and individual-level factors",
+      "Focus on routine monitoring at subnational levels to identify high-risk areas and underserved populations"
+    ],
+    "challenges": [
+      "Lack of suitable demographic data for baseline population estimates",
+      "Difficulty in delineating health facility catchment areas due to non-standard administrative boundaries",
+      "Insufficient integration of health facility data with service utilization patterns"
+    ]
+  },
+  {
+    "filename": "Social cartography and satellite-derived building coverage for post-census population estimates in difficult-to-access regions of Colombia.pdf",
+    "key_recommendations": [
+      {
+        "infrastructure_type": "population estimation",
+        "target_setting": "difficult-to-access regions, rural areas",
+        "expected_impact": "Improved accuracy of population estimates leading to better resource allocation for essential services",
+        "implementation_steps": [
+          "Conduct social cartography workshops with community representatives",
+          "Collect data on dwellings and population estimates from local knowledge",
+          "Integrate remotely sensed building data with community estimates",
+          "Develop hierarchical Bayesian models for population estimation",
+          "Validate models using cross-validation techniques"
+        ]
+      }
+    ],
+    "case_studies": [
+      {
+        "country": "Colombia",
+        "project": "2018 Population and Housing Unit Census",
+        "outcome": "Enhanced population estimates in remote areas, improved planning for essential services",
+        "lessons": "Combining local knowledge with satellite data improves accuracy; community engagement is crucial for data collection"
+      }
+    ],
+    "best_practices": [
+      "Engage local communities in data collection processes",
+      "Utilize a combination of local knowledge and remote sensing data for accurate estimates",
+      "Implement hierarchical Bayesian models to account for estimation uncertainty",
+      "Conduct regular training for community representatives on data collection methods"
+    ],
+    "challenges": [
+      "Geographic inaccessibility of certain regions",
+      "Insecurity due to armed conflict affecting data collection",
+      "Incomplete administrative records in remote areas",
+      "Difficulty in defining administrative boundaries"
+    ]
+  },
+  {
+    "filename": "UNIGME-2023-Child-Mortality-Report.pdf",
+    "key_recommendations": [
+      {
+        "infrastructure_type": "healthcare",
+        "target_setting": "developing countries",
+        "expected_impact": "reduction in child mortality rates",
+        "implementation_steps": [
+          "Increase funding for healthcare infrastructure",
+          "Train healthcare professionals in maternal and child health",
+          "Implement community health programs",
+          "Enhance access to essential medicines and vaccines",
+          "Establish monitoring and evaluation systems"
+        ]
+      },
+      {
+        "infrastructure_type": "data collection systems",
+        "target_setting": "rural areas",
+        "expected_impact": "improved accuracy of child mortality estimates",
+        "implementation_steps": [
+          "Develop standardized data collection protocols",
+          "Train local personnel in data collection methods",
+          "Utilize technology for real-time data reporting",
+          "Engage communities in data validation processes"
+        ]
+      }
+    ],
+    "case_studies": [
+      {
+        "country": "South Africa",
+        "project": "Child Mortality Estimation",
+        "outcome": "Improved child mortality estimates leading to targeted interventions",
+        "lessons": "Collaboration between government and international organizations enhances data accuracy"
+      },
+      {
+        "country": "Bangladesh",
+        "project": "Community Health Programs",
+        "outcome": "Significant reduction in under-five mortality rates",
+        "lessons": "Community engagement is crucial for the success of health interventions"
+      }
+    ],
+    "best_practices": [
+      "Foster multi-sectoral collaboration among health, education, and social services",
+      "Implement culturally sensitive health education programs",
+      "Utilize mobile health technologies to reach remote populations",
+      "Ensure equitable access to healthcare services for marginalized groups"
+    ],
+    "challenges": [
+      "Insufficient funding for healthcare infrastructure",
+      "Lack of trained healthcare professionals in rural areas",
+      "Data gaps and inconsistencies in child mortality reporting",
+      "Cultural barriers to accessing healthcare services"
+    ]
+  }
+]
