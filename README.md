@@ -13,6 +13,7 @@ This RAG (Retrieval-Augmented Generation) system combines research articles on A
 - **Population Context**: Automatically enriches answers with WorldPop demographic data when specific countries are mentioned
 - **Interactive Chat Interface**: Built with Streamlit for easy interaction and conversation history
 - **Source Citations**: All answers include references to source documents
+- **Visual Insights**: Displays relevant research figures and maps from articles when applicable
 
 ## Setup
 
@@ -41,6 +42,10 @@ OPENAI_API_KEY=your_openai_api_key_here
 
 4. Ensure your data files are in the `data/` folder:
    - `embeddings.pkl` - Pre-computed embeddings and knowledge base
+   - `knowledge_base.json` - Extracted knowledge from research articles
+   - `image_knowledge_base.json` - Image metadata for research figures
+
+5. Ensure your `images/` folder contains research figures (PNG, JPG formats)
 
 ## Usage
 
@@ -84,9 +89,13 @@ NASA/
 ├── test_rag.py           # Test script
 ├── requirements.txt       # Python dependencies
 ├── .env                   # Environment variables (create this)
+├── .streamlit/
+│   └── config.toml        # Streamlit configuration
 ├── data/
 │   ├── embeddings.pkl    # Pre-computed embeddings and knowledge base
-│   └── knowledge_base.json
+│   ├── knowledge_base.json # Extracted structured knowledge
+│   └── image_knowledge_base.json # Image metadata and search index
+├── images/                # Research figures (PNG, JPG)
 └── articles/             # Source PDF documents
 ```
 
@@ -111,9 +120,17 @@ Features:
 - Real-time chat interface
 - Conversation history
 - Expandable source citations
+- Visual research figures displayed contextually
+- Image search using keyword matching
 - Sidebar statistics (article count, unique sources)
 - Data sources information
 - Clear chat history option
+
+**Image Search:**
+- Automatically finds and displays relevant research figures (PNG, JPG)
+- Keyword-based matching on: relevance tags, geographic focus, data types, article topics
+- Limited to 2 images per response to avoid clutter
+- Supports visualization types: maps, charts, statistical plots, methodology diagrams
 
 ## Supported Countries
 
@@ -178,9 +195,11 @@ Nigeria, Kenya, Ghana, Ethiopia, South Africa, Tanzania, Uganda, Rwanda, Senegal
 6. Deploy!
 
 **Important Notes:**
-- The `data/` folder with `embeddings.pkl` must be committed to your repository
+- The `data/` folder with `embeddings.pkl`, `knowledge_base.json`, and `image_knowledge_base.json` must be committed to your repository
+- The `images/` folder with all PNG/JPG research figures must be committed
 - Never commit your `.env` file - use Streamlit secrets instead
 - The app will automatically install dependencies from `requirements.txt`
+- PDF images are not supported in deployment - only PNG and JPG formats
 
 ## Contributing
 

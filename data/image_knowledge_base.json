@@ -1,0 +1,173 @@
+{
+    "image_knowledge_base": [
+      {
+        "article_id": "1-s2.0-S1755436522000433-main.pdf",
+        "article_topic": "Small area population denominators",
+        "images": [
+          {
+            "image_id": "1",
+            "filename": "1 - Small area population denominators.pdf",
+            "description": "Maps for the regions encompassing the five most westerly provinces of the Dem. Rep. of Congo, reflecting portions of the population in each health zone, and with population density estimates",
+            "type": "map",
+            "geographic_focus": "Democratic Republic of Congo",
+            "data_type": "population_density",
+            "relevance": ["population_mapping", "health_zones", "DRC"]
+          },
+          {
+            "image_id": "2",
+            "filename": "2 - Small area population denominators.pdf",
+            "description": "Gridded population estimates for Kinshasa and the surrounding area in the Democratic Republic of Congo, with health estimates overlaid",
+            "type": "grid_map",
+            "geographic_focus": "Kinshasa, DRC",
+            "data_type": "gridded_population",
+            "relevance": ["population_estimates", "kinshasa", "health_infrastructure"]
+          }
+        ]
+      },
+      {
+        "article_id": "1-s2.0-S1877584525000358-main.pdf",
+        "article_topic": "Geostatistical analysis",
+        "images": [
+          {
+            "image_id": "1",
+            "filename": "1-geostatistical.png",
+            "description": "Cluster level estimates of proportions of children aged 12-23 months and 9-35 months who had received DTP1 and MCV1, respectively, obtained using the 2018 Nigeria Demographic and Health Survey",
+            "type": "cluster_map",
+            "geographic_focus": "Nigeria",
+            "data_type": "vaccination_coverage",
+            "relevance": ["vaccination", "children_health", "nigeria", "DHS"]
+          },
+          {
+            "image_id": "2",
+            "filename": "2-geostatistical.png",
+            "description": "Methodological overview. A schematic illustrating the implementation of geostatistical and machine learning approaches investigated in the study",
+            "type": "methodology_diagram",
+            "geographic_focus": null,
+            "data_type": "methodology",
+            "relevance": ["geostatistics", "machine_learning", "methods"]
+          }
+        ]
+      },
+      {
+        "article_id": "Filtering-and-improved-Uncertainty-Quantification-in-the-dynamic-_2022_Epide.pdf",
+        "article_topic": "COVID-19 reproduction number estimation",
+        "images": [
+          {
+            "image_id": "1",
+            "filename": "1-filtering.png",
+            "description": "Symptom onset date with corresponding posterior of Rt according to Cori et al. (2013) Poisson model. Shows Mérida incidence data multiplied by 10 and its corresponding posterior. Uncertainty in posterior responds to incidence absolute values not variation in reproduction numbers",
+            "type": "time_series_graph",
+            "geographic_focus": "Mérida",
+            "data_type": "covid19_reproduction_number",
+            "relevance": ["covid19", "reproduction_number", "bayesian", "uncertainty"]
+          },
+          {
+            "image_id": "2",
+            "filename": "2-filtering.png",
+            "description": "Postulated Erlang(3, 8/3) generation interval density for COVID19 pandemic with several other Erlang densities representing uncertainty. Shows resulting posterior distributions of Rt on 23JUN2020 and 03JUL2020 for Mérida COVID19 incidence data",
+            "type": "probability_distribution",
+            "geographic_focus": "Mérida",
+            "data_type": "generation_interval",
+            "relevance": ["covid19", "generation_interval", "uncertainty_quantification"]
+          },
+          {
+            "image_id": "3",
+            "filename": "3-filtering.png",
+            "description": "Rt values for last 60 days showing quantiles (10%, 25%, 50%, 75%, 90%) plotted vertically with blue shades and median in red. Includes Poisson model posterior of Rt from Cori et al. (2013) with green shades and black median line",
+            "type": "time_series_graph",
+            "geographic_focus": "Mexico",
+            "data_type": "covid19_reproduction_number",
+            "relevance": ["covid19", "time_series", "bayesian", "mexico"]
+          }
+        ]
+      },
+      {
+        "article_id": "e088606.full.pdf",
+        "article_topic": "Healthcare access and facility bypassing",
+        "images": [
+          {
+            "image_id": "1",
+            "filename": "1-e0.png",
+            "description": "Distance from the slums to the nearest health facility providing caesarean section (n=763)",
+            "type": "map",
+            "geographic_focus": "Urban slums",
+            "data_type": "healthcare_access",
+            "relevance": ["caesarean_section", "healthcare_access", "distance", "slums"]
+          },
+          {
+            "image_id": "2",
+            "filename": "2-e0.png",
+            "description": "Expected flows (A) versus observed flows (B) in six health facilities surveyed (n=763)",
+            "type": "flow_diagram",
+            "geographic_focus": null,
+            "data_type": "patient_flow",
+            "relevance": ["healthcare_utilization", "patient_flow", "caesarean_section"]
+          },
+          {
+            "image_id": "3",
+            "filename": "3-e0.png",
+            "description": "Reason for bypassing (n=108)",
+            "type": "bar_chart",
+            "geographic_focus": null,
+            "data_type": "healthcare_bypassing",
+            "relevance": ["facility_bypassing", "healthcare_choice", "caesarean_section"]
+          },
+          {
+            "image_id": "4",
+            "filename": "4-e0.png",
+            "description": "Multiple correspondence factor analysis",
+            "type": "statistical_plot",
+            "geographic_focus": null,
+            "data_type": "multivariate_analysis",
+            "relevance": ["statistical_analysis", "correspondence_analysis"]
+          },
+          {
+            "image_id": "5",
+            "filename": "5-e0.png",
+            "description": "Number of caesarean sections performed in public health facilities in Dakar in 2022 (data source: Dakar medical region, 2022 data, cartographic processing, authors)",
+            "type": "map",
+            "geographic_focus": "Dakar, Senegal",
+            "data_type": "caesarean_volume",
+            "relevance": ["dakar", "caesarean_section", "public_facilities", "senegal"]
+          }
+        ]
+      },
+      {
+        "article_id": "journal.pgph.0005072.pdf",
+        "article_topic": "Building and population modeling",
+        "images": [
+          {
+            "image_id": "1",
+            "filename": "1-journal.png",
+            "description": "Building and population counts observed in the 213 micro-census clusters located within the modelling environment categorised by settlement class",
+            "type": "bar_chart",
+            "geographic_focus": null,
+            "data_type": "building_population_counts",
+            "relevance": ["population_modeling", "building_counts", "settlement_classification"]
+          },
+          {
+            "image_id": "2",
+            "filename": "2-journal.png",
+            "description": "Posterior density distributions and boxplots for the parameters estimated in the building count (top) and population density (bottom) model components on a logarithmic scale",
+            "type": "statistical_plot",
+            "geographic_focus": null,
+            "data_type": "bayesian_parameters",
+            "relevance": ["bayesian_modeling", "population_density", "building_modeling", "parameter_estimation"]
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "total_articles": 5,
+      "total_images": 13,
+      "geographic_coverage": ["Democratic Republic of Congo", "Nigeria", "Mexico", "Senegal"],
+      "primary_topics": [
+        "population_estimation",
+        "healthcare_access",
+        "vaccination_coverage",
+        "covid19_epidemiology",
+        "spatial_modeling"
+      ],
+      "created_date": "2025-01-05"
+    }
+  }
